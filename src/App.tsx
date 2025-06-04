@@ -1,15 +1,11 @@
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import Load from './pages/LoadingPage';
 import Result from './pages/ResultPage';
 import Upload from './pages/UploadPage';
-
+//gimini-apiKey
 function App() {
   return (
     <div>
-      <nav>
-        <Link to="/">Upload</Link> | <Link to="/Load">Load</Link> | <Link to="/Load/Result">Result</Link>
-      </nav>
-
       <Routes>
         <Route path="/" element={<Upload />} />
         <Route path="/Load" element={<Load />} />
